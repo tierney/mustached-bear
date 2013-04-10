@@ -1,0 +1,13 @@
+prefix=/mnt/data/b/build/slave/linux-sdk-multirel/build/src/out/naclports/build_tools/bots/linux/../../../out/sdk_bundle/build/arm_glibc_Release
+exec_prefix=/mnt/data/b/build/slave/linux-sdk-multirel/build/src/out/naclports/build_tools/bots/linux/../../../out/sdk_bundle/build/arm_glibc_Release
+libdir=/mnt/data/b/build/slave/linux-sdk-multirel/build/src/out/naclports/build_tools/bots/linux/../../../out/sdk_bundle/build/arm_glibc_Release/lib
+includedir=${prefix}/include
+modules=0
+
+Name: libXML
+Version: 2.7.8
+Description: libXML library version2.
+Requires:
+Libs: -L${libdir} -lxml2
+Libs.private: -lpthread -lz  -lm  
+Cflags: -I${includedir}/libxml2 
