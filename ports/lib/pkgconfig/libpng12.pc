@@ -1,0 +1,11 @@
+prefix=/mnt/data/b/build/slave/linux-sdk-multirel/build/src/out/naclports/build_tools/bots/linux/../../../out/sdk_bundle/build/arm_glibc_Release
+exec_prefix=/mnt/data/b/build/slave/linux-sdk-multirel/build/src/out/naclports/build_tools/bots/linux/../../../out/sdk_bundle/build/arm_glibc_Release
+libdir=/mnt/data/b/build/slave/linux-sdk-multirel/build/src/out/naclports/build_tools/bots/linux/../../../out/sdk_bundle/build/arm_glibc_Release/lib
+includedir=${prefix}/include/libpng12
+
+Name: libpng
+Description: Loads and saves PNG files
+Version: 1.2.40
+Libs: -L${libdir} -lpng12
+Libs.private: -lz -lm -lnosys
+Cflags: -I${includedir} 

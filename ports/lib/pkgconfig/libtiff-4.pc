@@ -1,0 +1,11 @@
+prefix=/mnt/data/b/build/slave/linux-sdk-multirel/build/src/out/naclports/build_tools/bots/linux/../../../out/sdk_bundle/build/arm_glibc_Release
+exec_prefix=/mnt/data/b/build/slave/linux-sdk-multirel/build/src/out/naclports/build_tools/bots/linux/../../../out/sdk_bundle/build/arm_glibc_Release
+libdir=/mnt/data/b/build/slave/linux-sdk-multirel/build/src/out/naclports/build_tools/bots/linux/../../../out/sdk_bundle/build/arm_glibc_Release/lib
+includedir=${prefix}/include
+
+Name: libtiff
+Description:  Tag Image File Format (TIFF) library.
+Version: 4.0.3
+Libs: -L${libdir} -ltiff
+Libs.private: -ljpeg -lz 
+Cflags: -I${includedir}
